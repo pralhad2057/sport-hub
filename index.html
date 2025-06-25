@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport-Hub - Your World of Sports</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="./assets/css/style.css" />
+</head>
+    <!-- Custom Styles -->
+
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-gray-900">
+                Sport<span class="text-emerald-500">-Hub</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#featured" class="nav-link text-gray-600 font-medium">Featured</a>
+                <a href="#news" class="nav-link text-gray-600 font-medium">News</a>
+                <a href="#schedule" class="nav-link text-gray-600 font-medium">Schedule</a>
+                <a href="#contact" class="nav-link text-gray-600 font-medium">Contact</a>
+            </div>
+            <a href="#"
+                class="hidden md:inline-block bg-emerald-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300">
+                Subscribe
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#featured" class="block py-2 text-gray-600 font-medium">Featured</a>
+            <a href="#news" class="block py-2 text-gray-600 font-medium">News</a>
+            <a href="#schedule" class="block py-2 text-gray-600 font-medium">Schedule</a>
+            <a href="#contact" class="block py-2 text-gray-600 font-medium">Contact</a>
+            <a href="#"
+                class="mt-2 block bg-emerald-500 text-white text-center font-semibold px-5 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300">Subscribe</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-white h-[60vh] flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Your Ultimate Sports Destination</h1>
+                <img src="./assets/img/sports-news.webp" alt="news">
+                <p class="text-lg md:text-xl font-light text-gray-200 mb-8">Live scores, breaking news, and in-depth
+                    analysis.</p>
+                <a href="#news"
+                    class="bg-emerald-500 text-white font-semibold px-8 py-3 rounded-lg hover:bg-emerald-600 transition-colors duration-300 text-lg">
+                    Explore News
+              
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Sports Section -->
+        <section id="featured" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Featured Sports</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1: Football -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover transition-all duration-300">
+                        <img src="./assets/img/images.jpg" alt="Football"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Football</h3>
+                            <p class="text-gray-600">Get the latest scores, news, and highlights from the world of
+                                football.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2: Basketball -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover transition-all duration-300">
+                        <img src="./assets/img/basketball.avif" alt="Basketball"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Basketball</h3>
+                            <p class="text-gray-600">Follow your favorite NBA teams and players with our extensive
+                                coverage.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3: Tennis -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover transition-all duration-300">
+                        <img src="./assets/img/tennis-balls.jpg" alt="Tennis"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Tennis</h3>
+                            <p class="text-gray-600">From Grand Slams to ATP tours, we've got all the tennis action.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4: MMA -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg card-hover transition-all duration-300">
+                        <img src="./assets/img/MMA.jpg" alt="MMA"
+                            class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">MMA</h3>
+                            <p class="text-gray-600">Inside the octagon with fight news, analysis, and event schedules.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section id="news" class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Latest News</h2>
+                <div class="flex flex-wrap -mx-4">
+                    <!-- Main News Story -->
+                    <div class="w-full lg:w-2/3 px-4 mb-8 lg:mb-0">
+                        <div class="bg-white rounded-lg overflow-hidden shadow-lg h-full">
+                            <img src="https://placehold.co/800x450/9CA3AF/FFFFFF?text=Breaking+News" alt="Main News"
+                                class="w-full h-64 object-cover">
+                            <div class="p-6">
+                                <span class="text-emerald-500 text-sm font-semibold">Breaking News</span>
+                                <h3 class="text-2xl font-bold my-2">Team Velocity Wins the Championship in a Thrilling
+                                    Final</h3>
+                                <p class="text-gray-600 mb-4">After a nail-biting final match that went into overtime,
+                                    Team Velocity emerged victorious, claiming their first title in over a decade.</p>
+                                <a href="#" class="text-emerald-600 font-semibold hover:underline">Read More &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar with smaller news items -->
+                    <div class="w-full lg:w-1/3 px-4">
+                        <div class="space-y-6">
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-start space-x-4">
+                                <img src="https://placehold.co/100x100/34D399/FFFFFF?text=Athlete" alt="News 2"
+                                    class="w-20 h-20 object-cover rounded">
+                                <div>
+                                    <h4 class="font-semibold">Star Player Signs Record-Breaking Contract</h4>
+                                    <p class="text-sm text-gray-500">A new era begins as the league's top talent commits
+                                        to a historic deal.</p>
+                                    <a href="#"
+                                        class="text-sm text-emerald-600 hover:underline mt-1 inline-block">Details</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-start space-x-4">
+                                <img src="https://placehold.co/100x100/FBBF24/FFFFFF?text=Race" alt="News 3"
+                                    class="w-20 h-20 object-cover rounded">
+                                <div>
+                                    <h4 class="font-semibold">Upcoming Grand Prix: What to Expect</h4>
+                                    <p class="text-sm text-gray-500">Previewing the key matchups and challenges for the
+                                        race weekend.</p>
+                                    <a href="#"
+                                        class="text-sm text-emerald-600 hover:underline mt-1 inline-block">Analysis</a>
+                                </div>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-md flex items-start space-x-4">
+                                <img src="https://placehold.co/100x100/60A5FA/FFFFFF?text=Transfer" alt="News 4"
+                                    class="w-20 h-20 object-cover rounded">
+                                <div>
+                                    <h4 class="font-semibold">Major Transfer Rumors Heating Up</h4>
+                                    <p class="text-sm text-gray-500">Who is on the move? We break down the latest
+                                        transfer market buzz.</p>
+                                    <a href="#" class="text-sm text-emerald-600 hover:underline mt-1 inline-block">Read
+                                        More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-10">Upcoming Events</h2>
+                <div class="bg-white rounded-lg shadow-lg overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-100">
+                            <tr>
+                                <th class="p-4 font-semibold">Date & Time</th>
+                                <th class="p-4 font-semibold">Event</th>
+                                <th class="p-4 font-semibold">Sport</th>
+                                <th class="p-4 font-semibold">Watch On</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="p-4">July 28, 2024 - 19:00</td>
+                                <td class="p-4 font-medium text-gray-800">Lions vs Tigers</td>
+                                <td class="p-4">Football</td>
+                                <td class="p-4"><span
+                                        class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">Live</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">July 29, 2024 - 15:30</td>
+                                <td class="p-4 font-medium text-gray-800">Knights vs Giants</td>
+                                <td class="p-4">Basketball</td>
+                                <td class="p-4"><span
+                                        class="bg-blue-500 text-white text-xs font-bold px-2 py-1 rounded">ESPN+</span>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-4">July 30, 2024 - 11:00</td>
+                                <td class="p-4 font-medium text-gray-800">Summer Open - Finals</td>
+                                <td class="p-4">Tennis</td>
+                                <td class="p-4"><span
+                                        class="bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">Tennis
+                                        Channel</span></td>
+                            </tr>
+                            <tr>
+                                <td class="p-4">July 31, 2024 - 21:00</td>
+                                <td class="p-4 font-medium text-gray-800">UFC Fight Night 245</td>
+                                <td class="p-4">MMA</td>
+                                <td class="p-4"><span
+                                        class="bg-black text-white text-xs font-bold px-2 py-1 rounded">UFC Fight
+                                        Pass</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white pt-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sport-Hub</h3>
+                    <p class="text-gray-400">The central hub for sports fans. We provide the latest news, scores, and
+                        content to keep you in the game.</p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li class="mb-2"><a href="#news" class="text-gray-400 hover:text-white">News</a></li>
+                        <li class="mb-2"><a href="#schedule" class="text-gray-400 hover:text-white">Schedule</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Social -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                                </path>
+                            </svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.148 2 12.315 2zM12 7.025a4.975 4.975 0 100 9.95 4.975 4.975 0 000-9.95zm0 8.25a3.275 3.275 0 110-6.55 3.275 3.275 0 010 6.55zm6.305-6.75a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a>
+                    </div>
+                </div>
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Join Our Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Get the latest sports news and updates delivered to your inbox.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l-lg text-gray-800 focus:outline-none">
+                            <button type="submit"
+                                class="bg-emerald-500 text-white font-semibold px-4 py-2 rounded-r-lg hover:bg-emerald-600">
+                                Sign Up
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 pb-8 text-center text-gray-500">
+                <p>&copy; 2024 Sport-Hub. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script. src="./assets/js/script.js"></script>
+</body>
+
+</html>

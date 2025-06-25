@@ -1,0 +1,40 @@
+       /* style.css */
+       .hero-section {
+              background: linear-gradient(to right, #1f2937, #111827);
+              /* from-gray-800 to-gray-900 */
+              color: #f9fafb;
+              /* from-gray-100 */
+              padding: 2rem;
+              text-align: center;
+              border-radius: 0.5rem;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+       }
+
+       /* Custom hover effect for cards */
+       .card-hover:hover {
+           transform: translateY(-5px);
+           transition: all 0.3s ease-in-out;
+           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+       }
+
+       /* Make video responsive */
+       video {
+           width: 100%;
+           height: auto;
+           border-radius: 0.5rem;
+           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+       }
+
+       /* Smooth scroll for nav links */
+       html {
+           scroll-behavior: smooth;
+       }
+
+       /* Style for mobile menu button when active */
+       #mobile-menu-button.active svg {
+           color: #10b981;
+           /* emerald-500 */
+       }
+
+       /* Optional: Hero Section Background Gradient */
+       
